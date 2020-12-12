@@ -3,7 +3,7 @@
 if( isset($_POST['nombre']) ){
     $id=$_POST['id'];
     $nombre=$_POST['nombre'];
-    $cuil/cuit=$_POST['cuil/cuit'];
+/*     $cuil/cuit=$_POST['cuil/cuit']; */
     $query="UPDATE Empresas SET nombre='$nombre',cuil/cuit='$cuil/cuit' WHERE id='$id'";
     mysqli_query($link , $query);
     include("include/tabla.php");
@@ -15,7 +15,7 @@ else{
     $row = mysqli_fetch_array($res);
     $id=$row['id'];
     $nombre=$row['nombre'];
-    $dni=$row['cuil/cuit'];
+/*     $cuil/cuit=$row['cuil/cuit']; */
 
 ?>
 <form method=post>
