@@ -5,9 +5,9 @@
     </tr>
     
 <?php
-    $query="SELECT * FROM Localidades ORDER BY nombre";
+    $query="SELECT * FROM localidades ORDER BY nombre";
     $res=mysqli_query($link , $query);
- 
+
     while ($row = mysqli_fetch_array($res)) {
         echo "<tr>";
             echo "<td>".$row['nombre']."</td>";

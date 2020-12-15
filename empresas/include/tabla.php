@@ -3,6 +3,8 @@
     <tr>
         <td>Nombre</td>
         <td>Cuil/cuit</td>
+        <td>Modificar</td>
+        <td>Borrar</td>
     </tr>
     
 <?php
@@ -12,7 +14,7 @@
     while ($row = mysqli_fetch_array($res)) {
         echo "<tr>";
             echo "<td>".$row['nombre']."</td>";
-            echo "<td>".$row['cuil/cuit']."</td>";
+            echo "<td>".$row['cuilcuit']."</td>";
             echo "<td align=center><a href='modificar.php?id=".$row['id']."'>X</a></td>";
             echo "<td align=center><a href='borrar.php?id=".$row['id']."'>X</a></td>";
         echo "</tr>";
