@@ -1,4 +1,4 @@
-<?php include("include/init.php");
+<?php include("/include/init.php");
 
 if( isset($_POST['nombre']) ){
     $id=$_POST['id'];
@@ -23,5 +23,5 @@ else{
 </form>
 <?php
 }
-include("include/close.php");
+include("/include/close.php");
 ?>

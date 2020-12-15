@@ -1,8 +1,8 @@
-<?php include("include/init.php");
+<?php include("/include/init.php");
 
 if( isset($_POST['nombre']) ){
     $nombre=$_POST['nombre'];
-    $query="INSERT INTO usuarios (nombre) VALUES ('$nombre')";
+    $query="INSERT INTO localidades (nombre) VALUES ('$nombre')";
     mysqli_query($link , $query);
     include("include/tabla.php");
 }

@@ -6,7 +6,7 @@
     </tr>
     
 <?php
-    $query="SELECT * FROM Empresas ORDER BY nombre";
+    $query="SELECT * FROM empresas ORDER BY nombre";
     $res=mysqli_query($link , $query);
  
     while ($row = mysqli_fetch_array($res)) {
