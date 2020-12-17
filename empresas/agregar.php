@@ -8,7 +8,6 @@ if( isset($_POST['nombre']) ){
     $nombre=$_POST['nombre'];
     $cuilcuit=$_POST['cuilcuit'];
     $query="INSERT INTO empresas (nombre,cuilcuit) VALUES ('$nombre','$cuilcuit')";
-    echo $query;
     mysqli_query($link , $query);
     include("include/tabla.php");
 }
