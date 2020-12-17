@@ -6,8 +6,9 @@ include("../include/init.php");
 
 if( isset($_POST['nombre']) ){
     $nombre=$_POST['nombre'];
-    $cuilcuit=$_POST['cuilcuit'];
-    $query="INSERT INTO empresas (nombre,cuilcuit) VALUES ('$nombre','$cuilcuit')";
+    $apellido=$_POST['apellido'];
+    $documento=$_POST['documento'];
+    $query="INSERT INTO clientes (nombre,apellido,documento) VALUES ('$nombre','$apellido','$documento')";
     echo $query;
     mysqli_query($link , $query);
     include("include/tabla.php");
@@ -16,7 +17,8 @@ else{
 ?>
 <form method=post>
     Nombre: <input type=text name=nombre required><br><br>
-    Cuil/Cuit: <input type=text name=cuilcuit required><br><br>
+    Apellido: <input type=text name=apellido required><br><br>
+    Documento: <input type=text name=documento required><br><br>
     <input type="submit" value="Agregar">
 </form>
 <?php
