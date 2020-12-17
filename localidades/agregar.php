@@ -14,5 +14,5 @@ else{
 </form>
 <?php
 }
-include("..include/close.php");
+include("../include/close.php");
 ?>

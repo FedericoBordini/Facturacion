@@ -2,6 +2,8 @@
 <table border="1">
     <tr>
         <td>Nombre</td>
+        <td>Modificar</td>
+        <td>Borrar</td>
     </tr>
     
 <?php

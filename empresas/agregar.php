@@ -1,9 +1,14 @@
-<?php include("../include/init.php");
+<?php 
+ini_set('display_errors', 1);
+   ini_set('display_startup_errors', 1);
+   error_reporting(E_ALL);
+include("../include/init.php");
 
 if( isset($_POST['nombre']) ){
     $nombre=$_POST['nombre'];
     $cuilcuit=$_POST['cuilcuit'];
     $query="INSERT INTO empresas (nombre,cuilcuit) VALUES ('$nombre','$cuilcuit')";
+    echo $query;
     mysqli_query($link , $query);
     include("include/tabla.php");
 }

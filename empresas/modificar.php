@@ -4,7 +4,7 @@ if( isset($_POST['nombre']) ){
     $id=$_POST['id'];
     $nombre=$_POST['nombre'];
     $cuilcuit=$_POST['cuilcuit'];
-    $query="UPDATE empresas SET nombre='$nombre',cuil/cuit='$cuilcuit' WHERE id='$id'";
+    $query="UPDATE empresas SET nombre='$nombre',cuilcuit='$cuilcuit' WHERE id='$id'";
     mysqli_query($link , $query);
     include("include/tabla.php");
 }
@@ -15,7 +15,7 @@ else{
     $row = mysqli_fetch_array($res);
     $id=$row['id'];
     $nombre=$row['nombre'];
-    $cuilcuit=$row['cuil/cuit'];
+    $cuilcuit=$row['cuilcuit'];
 
 ?>
 <form method=post>

@@ -9,7 +9,7 @@ if( isset($_POST['nombre']) ){
 }
 else{
     $id=$_GET['id'];
-    $query = "SELECT * FROM Localidades WHERE id=$id";
+    $query = "SELECT * FROM localidades WHERE id=$id";
     $res=mysqli_query($link , $query);
     $row = mysqli_fetch_array($res);
     $id=$row['id'];
