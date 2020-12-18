@@ -1,8 +1,8 @@
-<a href="articulos">Articulos</a><br>
 <a href="clientes">Clientes</a><br>
 <a href="empresas">Empresas</a><br>
 <a href="facturas">Facturas</a><br>
-<a href="localidades">Localidades</a><br><br>
+<a href="localidades">Localidades</a><br>
+<a href="articulos">Articulos</a><br><br>
 
 <table border="1">
     <tr>

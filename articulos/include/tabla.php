@@ -1,4 +1,5 @@
 <a href="agregar.php">Agregar Articulo</a>
+<a href="../index.php">Volver al inicio</a>
 <table border="1">
     <tr>
         <td>Nombre</td>
